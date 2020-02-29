@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <EditText
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edit_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="          请输入关键字          "
+        android:textAlignment="center"
+        android:textColorHint="@color/colorBlack"/>
+
+    <Button
+        android:layout_marginTop="0dp"
+        android:id="@+id/btn_search"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:text="查询"
+        android:layout_below="@id/edit_word"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_marginTop="-10dp"
+        android:paddingLeft="5dp"
+        android:textSize="23dp"
+        android:id="@+id/text_sentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:textSize="18dp"
+        android:id="@+id/text_title"
+        android:layout_alignParentEnd="true"
+        android:text=""
+        android:layout_marginTop="380dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_sign"
+        android:textSize="18dp"
+        android:layout_toLeftOf="@id/text_title"
+        android:layout_marginTop="380dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/btn_pre"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:text="上一个"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/text_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/0"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"/>
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="下一个"/>
+
+</RelativeLayout>
